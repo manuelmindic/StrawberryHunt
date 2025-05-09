@@ -19,11 +19,25 @@ public class LevelScript : MonoBehaviour
 
     public void LevelSelector(string levelCounter)
     {
+        levelCounter = "1";
+
         if (levelCounter == levelOneButton.name)
         {
             levelOneButton.enabled = true;
             levelTwoButton.enabled = false;
             levelThreeButton.enabled = false;
         }
+        else if (levelOneButton.name == levelTwoButton.name)
+        {
+            levelTwoButton.enabled = true;
+            levelThreeButton.enabled = false;
+            levelOneButton.enabled = false;
+        }
+        else if (levelThreeButton.name == levelOneButton.name)
+        {
+            levelOneButton.enabled = false;
+            levelTwoButton.enabled = false;
+            levelThreeButton.enabled = true;
+        }
     }
-}
+    }
