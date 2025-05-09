@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: strawberry_bush_tree_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 62
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee86d2acdd491554fa2afd21ceec51b1
+      internalID: 431853324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 62
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89495374807eaf4e826eb60b924758a
+      internalID: 444014043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 64
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cf6eb6d1da6064c97900d3b0e622c6
+      internalID: -775406510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35495c00b947bd84887655ba73c4297f
+      internalID: -151829997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 31
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64269e5ba96c44d4390e92beb5b54596
+      internalID: -1753553296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 30
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033c974369df12b42b87e610cde251df
+      internalID: 2007969200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strawberry_bush_tree_6
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c377bef7b2696b149958e57cca7e07f8
+      internalID: -1336721706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      strawberry_bush_tree_0: 431853324
+      strawberry_bush_tree_1: 444014043
+      strawberry_bush_tree_2: -775406510
+      strawberry_bush_tree_3: -151829997
+      strawberry_bush_tree_4: -1753553296
+      strawberry_bush_tree_5: 2007969200
+      strawberry_bush_tree_6: -1336721706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

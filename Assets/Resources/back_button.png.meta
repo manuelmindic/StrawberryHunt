@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 056ab9b56fc80ad4f90e36c551b94f1b
+guid: ede4a8540bb47cb418b66510844ebd4d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,49 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: pink_kitty_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 157
-        width: 16
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e6212784944a9449beb0b2ab018719a
-      internalID: 171599727
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pink_kitty_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 158
-        width: 16
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a075e1aa103947b46a4583a0d4dac7b3
-      internalID: -1579253440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -161,9 +119,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      pink_kitty_0: -1579253440
-      pink_kitty_1: 171599727
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
