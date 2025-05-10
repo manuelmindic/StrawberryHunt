@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 targetPosition;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
+    private Vector2 lastDirection = Vector2.down;
 
 
 
@@ -41,11 +42,17 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 destination = transform.position + new Vector3(input.x, input.y, 0);
                 StartCoroutine(MoveTo(destination));
             }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                TryRemoveBush();
+            }
         }
     }
 
     private void SetDirectionSprite(Vector2 direction)
     {
+        lastDirection = direction;
         if (direction == Vector2.up)
             spriteRenderer.sprite = spriteUp;
         else if (direction == Vector2.down)
@@ -54,6 +61,23 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.sprite = spriteLeft;
         else if (direction == Vector2.right)
             spriteRenderer.sprite = spriteRight;
+    }
+
+    private void TryRemoveBush()
+    {
+        Debug.Log("Hello");
+        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Bush");
+        Vector2 checkPos = (Vector2)transform.position + lastDirection;
+        Collider2D hit = Physics2D.OverlapPoint(checkPos, 1);
+
+        if (hit != null && hit.CompareTag("Bush"))
+        {
+            Debug.Log("Bush in front!");
+            Destroy(hit.gameObject);
+        }
+
+
+
     }
 
     private System.Collections.IEnumerator MoveTo(Vector3 destination)
