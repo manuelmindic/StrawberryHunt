@@ -22,6 +22,15 @@ public class StartScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void CreditScene()
+    {
+        SceneManager.LoadScene("CreditScene");
+    }
+    public void TutorialScene()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
