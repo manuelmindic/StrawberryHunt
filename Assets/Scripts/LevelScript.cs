@@ -24,7 +24,6 @@ public class LevelScript : MonoBehaviour
         string levelCounter = gameManager.levelProgress.ToString();
         LevelSelector(levelCounter);
 
-        
     }
 
     private void Update()
