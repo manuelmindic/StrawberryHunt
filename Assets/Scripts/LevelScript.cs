@@ -17,15 +17,18 @@ public class LevelScript : MonoBehaviour
     public TMP_Text levelThreeText;
     public Sprite disabledSprite;
 
-        void Start()
+    AudioSource levelClickSound;
+
+    public float speed = 2f;
+    public float height = 8f;
+
+    public Vector3 originPos;
+    void Start()
     {
-        string levelCounter = "1";
+        string levelCounter = "2";
         Debug.Log(levelOneText.text + "Hieiiier");
         LevelSelector(levelCounter);
-    }
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
     public void LevelSelector(string levelCounter)
@@ -69,9 +72,11 @@ public class LevelScript : MonoBehaviour
         }
     }
 
+    
+
     public void pressNextLevel()
     {
-
+        levelClickSound.Play();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     }
