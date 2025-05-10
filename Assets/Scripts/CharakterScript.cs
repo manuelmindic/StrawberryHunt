@@ -23,6 +23,7 @@ public class CharakterScript : MonoBehaviour
     {
         GameManager.Instance.selectedCharacterIndex = value;
         Debug.Log("Selected character sprite: " + value);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void Update()
@@ -38,11 +39,6 @@ public class CharakterScript : MonoBehaviour
             characterImages[1].sprite = showAltImage ? char2Sprites[1] : char2Sprites[0];
             characterImages[2].sprite = showAltImage ? char3Sprites[1] : char3Sprites[0];
         }
-    }
-
-    public void ContinueScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void BackScene()
