@@ -1297,10 +1297,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTime: 0.2
-  spriteUp: {fileID: 679332054, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
-  spriteDown: {fileID: 2024722924, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
-  spriteLeft: {fileID: -1392617420, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
-  spriteRight: {fileID: 792436121, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
+  spriteUp: {fileID: -537005481, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  spriteDown: {fileID: 1718328832, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  spriteLeft: {fileID: -875320176, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  spriteRight: {fileID: 1627902265, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
 --- !u!61 &674771198
 BoxCollider2D:
   m_ObjectHideFlags: 0

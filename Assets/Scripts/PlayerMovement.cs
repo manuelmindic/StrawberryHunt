@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveTime = 0.2f; // Time to move to next grid space
+    public float moveTime = 0.2f;
     public Sprite spriteUp;
     public Sprite spriteDown;
     public Sprite spriteLeft;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         targetPosition = transform.position;
-        rb.gravityScale = 0; // Disable gravity
+        rb.gravityScale = 0;
         rb.freezeRotation = true;
     }
 
@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
         {
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-            // Only allow cardinal movement
             if (input.x != 0) input.y = 0;
 
             if (input != Vector2.zero)
@@ -67,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         while (elapsedTime < moveTime)
         {
             Vector3 newPos = Vector3.Lerp(startingPos, destination, elapsedTime / moveTime);
-            rb.MovePosition(newPos); // Use Rigidbody2D for movement
+            rb.MovePosition(newPos); 
             elapsedTime += Time.deltaTime;
             yield return null;
         }
