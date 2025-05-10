@@ -6,7 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public string selectedCharacterIndex;
+    public string selectedCharacterIndex = "blue";
+    public int levelProgress = 1;
 
     void Awake()
     {
