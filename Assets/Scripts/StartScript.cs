@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
+    public AudioSource levelClickSound;
+    public AudioClip clickClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,18 +19,40 @@ public class StartScript : MonoBehaviour
         
     }
 
+    private IEnumerator PlaySoundAndLoad(string sceneName = "")
+    {
+        if (levelClickSound != null && clickClip != null)
+        {
+            Debug.Log("Playing sound...");
+            levelClickSound.PlayOneShot(clickClip);
+            yield return new WaitForSeconds(clickClip.length); 
+        }
+
+        
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
     public void ClickStart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(PlaySoundAndLoad());
     }
 
     public void CreditScene()
     {
-        SceneManager.LoadScene("CreditScene");
+        StartCoroutine(PlaySoundAndLoad("CreditScene")); 
     }
+
     public void TutorialScene()
     {
-        SceneManager.LoadScene("TutorialScene");
+        StartCoroutine(PlaySoundAndLoad("TutorialScene")); 
     }
 
     public void QuitGame()

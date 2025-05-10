@@ -288,14 +288,14 @@ RectTransform:
   m_GameObject: {fileID: 317702004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.48, y: 2.9157481, z: 1}
+  m_LocalScale: {x: 2.0635087, y: 2.4260774, z: 0.83206}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1467085761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: -16.242188}
+  m_AnchoredPosition: {x: -150, y: -16.242}
   m_SizeDelta: {x: 70, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &317702006
@@ -374,7 +374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2024722924, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
+  m_Sprite: {fileID: -672154748, guid: de3baf1b47dce20449f9fb2bcfc418d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -498,7 +498,7 @@ RectTransform:
   m_GameObject: {fileID: 624968852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.48, y: 2.9157481, z: 1}
+  m_LocalScale: {x: 2.063509, y: 2.426077, z: 0.83206}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1467085761}
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1056518464, guid: 96c20e0b601f7c249b7036344d7914c0, type: 3}
+  m_Sprite: {fileID: 2069029821, guid: c811891c44a41c6429c4fd9c756d79a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -630,7 +630,7 @@ RectTransform:
   m_GameObject: {fileID: 663650625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.48, y: 2.9157481, z: 1}
+  m_LocalScale: {x: 2.063509, y: 2.426077, z: 0.83206}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1467085761}
@@ -716,7 +716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1579253440, guid: 056ab9b56fc80ad4f90e36c551b94f1b, type: 3}
+  m_Sprite: {fileID: -252082619, guid: 2b9e5edf1a61a154bbcf41ceb29635b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -858,14 +858,14 @@ MonoBehaviour:
   - {fileID: 663650628}
   - {fileID: 624968855}
   char1Sprites:
-  - {fileID: 2024722924, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
-  - {fileID: 1272260622, guid: eb54d89903a1c584e9c8c181ceb67a52, type: 3}
+  - {fileID: -672154748, guid: de3baf1b47dce20449f9fb2bcfc418d5, type: 3}
+  - {fileID: 258935876, guid: de3baf1b47dce20449f9fb2bcfc418d5, type: 3}
   char2Sprites:
-  - {fileID: -1579253440, guid: 056ab9b56fc80ad4f90e36c551b94f1b, type: 3}
-  - {fileID: 171599727, guid: 056ab9b56fc80ad4f90e36c551b94f1b, type: 3}
+  - {fileID: -252082619, guid: 2b9e5edf1a61a154bbcf41ceb29635b5, type: 3}
+  - {fileID: 359270580, guid: 2b9e5edf1a61a154bbcf41ceb29635b5, type: 3}
   char3Sprites:
-  - {fileID: 1056518464, guid: 96c20e0b601f7c249b7036344d7914c0, type: 3}
-  - {fileID: -241616561, guid: 96c20e0b601f7c249b7036344d7914c0, type: 3}
+  - {fileID: 2069029821, guid: c811891c44a41c6429c4fd9c756d79a5, type: 3}
+  - {fileID: -709338159, guid: c811891c44a41c6429c4fd9c756d79a5, type: 3}
 --- !u!1 &1745728069
 GameObject:
   m_ObjectHideFlags: 0
