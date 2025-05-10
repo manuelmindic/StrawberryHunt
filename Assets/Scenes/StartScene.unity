@@ -1878,8 +1878,8 @@ MonoBehaviour:
   - {fileID: 569384178}
   - {fileID: 72804406}
   char1Sprites:
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   char2Sprites:
   - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
@@ -1887,8 +1887,8 @@ MonoBehaviour:
   - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   char4Sprites:
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
   - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!1 &2018309356
 GameObject:
   m_ObjectHideFlags: 0

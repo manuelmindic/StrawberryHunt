@@ -14,16 +14,56 @@ public class CharakterScript : MonoBehaviour
     private float timer;
     private bool showAltImage = false;
 
-   
+    public AudioSource levelClickSound;
+    public AudioSource levelClickSound2;
+    public AudioSource levelClickSound3;
+    public AudioSource backButtonSource;
+    public AudioClip clickClip;
+    public AudioClip clickClip2;
+    public AudioClip clickClip3;
+    public AudioClip backButtonClip;
+
     void Start()
     {
+    }
+
+    private IEnumerator PlaySoundAndLoad(string sceneName = "", AudioSource audioSource = null, AudioClip audioClip = null)
+    {
+        if (audioSource != null && audioClip != null)
+        {
+            Debug.Log("Playing sound...");
+            audioSource.PlayOneShot(audioClip); 
+            yield return new WaitForSeconds(audioClip.length); 
+        }
+
+        
+        if (!string.IsNullOrEmpty(sceneName))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void SelectCharacter(string value)
     {
         GameManager.Instance.selectedCharacterIndex = value;
         Debug.Log("Selected character sprite: " + value);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        if (value == "blue")
+        {
+            StartCoroutine(PlaySoundAndLoad("",levelClickSound, clickClip));
+        }
+        else if (value == "pink")
+        {
+            StartCoroutine(PlaySoundAndLoad("", levelClickSound2, clickClip2));
+        }
+        else if (value == "yellow")
+        {
+            StartCoroutine(PlaySoundAndLoad("", levelClickSound3, clickClip3));
+        }
     }
 
     void Update()
@@ -43,6 +83,6 @@ public class CharakterScript : MonoBehaviour
 
     public void BackScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        StartCoroutine(PlaySoundAndLoad("BackScene", backButtonSource, backButtonClip));
     }
 }
