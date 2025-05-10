@@ -454,10 +454,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClickSound: {fileID: 0}
   clickClip: {fileID: 0}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  sprite1: {fileID: 0}
-  sprite2: {fileID: 0}
   characterImages:
   - {fileID: 662391693}
   - {fileID: 17127958}
@@ -1068,15 +1064,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClickSound: {fileID: 0}
   clickClip: {fileID: 0}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  sprite1: {fileID: 0}
-  sprite2: {fileID: 0}
-  characterImages: []
-  char1Sprites: []
-  char2Sprites: []
-  char3Sprites: []
-  char4Sprites: []
+  characterImages:
+  - {fileID: 662391693}
+  - {fileID: 17127958}
+  - {fileID: 569384178}
+  - {fileID: 72804406}
+  char1Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char2Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char3Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char4Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!1 &845127149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,15 +1269,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClickSound: {fileID: 0}
   clickClip: {fileID: 0}
-  image1: {fileID: 662391693}
-  image2: {fileID: 17127958}
-  sprite1: {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  sprite2: {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  characterImages: []
-  char1Sprites: []
-  char2Sprites: []
-  char3Sprites: []
-  char4Sprites: []
+  characterImages:
+  - {fileID: 662391693}
+  - {fileID: 17127958}
+  - {fileID: 569384178}
+  - {fileID: 72804406}
+  char1Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char2Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char3Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char4Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!1 &1150852810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,15 +1663,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClickSound: {fileID: 2018309357}
   clickClip: {fileID: 8300000, guid: 51ded553984d21e4d93d8b55af7b0535, type: 3}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  sprite1: {fileID: 0}
-  sprite2: {fileID: 0}
-  characterImages: []
-  char1Sprites: []
-  char2Sprites: []
-  char3Sprites: []
-  char4Sprites: []
+  characterImages:
+  - {fileID: 662391693}
+  - {fileID: 17127958}
+  - {fileID: 569384178}
+  - {fileID: 72804406}
+  char1Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char2Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char3Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char4Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!1 &1687349064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,15 +1711,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelClickSound: {fileID: 2018309357}
   clickClip: {fileID: 8300000, guid: 51ded553984d21e4d93d8b55af7b0535, type: 3}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  sprite1: {fileID: 0}
-  sprite2: {fileID: 0}
-  characterImages: []
-  char1Sprites: []
-  char2Sprites: []
-  char3Sprites: []
-  char4Sprites: []
+  characterImages:
+  - {fileID: 662391693}
+  - {fileID: 17127958}
+  - {fileID: 569384178}
+  - {fileID: 72804406}
+  char1Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char2Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char3Sprites:
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  char4Sprites:
+  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
+  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!4 &1687349066
 Transform:
   m_ObjectHideFlags: 0
@@ -1893,77 +1921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6c98a000afc1a419f8992e42a8513f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1869541995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1869541996}
-  - component: {fileID: 1869541997}
-  m_Layer: 0
-  m_Name: StrawberryObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1869541996
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869541995}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.48114, y: 6.254242, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 662391692}
-  - {fileID: 17127957}
-  - {fileID: 569384177}
-  - {fileID: 72804405}
-  m_Father: {fileID: 1057005128}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1869541997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869541995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e299342f2d1256446bc1410c7fba2504, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelClickSound: {fileID: 0}
-  clickClip: {fileID: 0}
-  image1: {fileID: 0}
-  image2: {fileID: 0}
-  sprite1: {fileID: 0}
-  sprite2: {fileID: 0}
-  characterImages:
-  - {fileID: 662391693}
-  - {fileID: 17127958}
-  - {fileID: 569384178}
-  - {fileID: 72804406}
-  char1Sprites:
-  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  char2Sprites:
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  char3Sprites:
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  char4Sprites:
-  - {fileID: -2043252948, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
-  - {fileID: -1226033483, guid: 027b3351354d6d648af1d16bf85b03e2, type: 3}
 --- !u!1 &2018309356
 GameObject:
   m_ObjectHideFlags: 0
