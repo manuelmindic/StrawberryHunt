@@ -15,7 +15,7 @@ public class UpAndDownLevel : MonoBehaviour
     private GameManager gameManager = GameManager.Instance;
 
     public AudioSource levelClickSound;
-
+    public AudioClip clickClip;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,11 +39,21 @@ public class UpAndDownLevel : MonoBehaviour
             }
         }
     }
+
     public void pressNextLevel()
     {
-        Debug.Log("audiooo");
-        levelClickSound.Play();
-        SceneManager.LoadScene("GameSceneLevel"+gameManager.levelProgress);
-        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(PlaySoundAndLoad());
     }
+
+    private IEnumerator PlaySoundAndLoad()
+    {
+        if (levelClickSound != null && clickClip != null)
+        {
+            levelClickSound.PlayOneShot(clickClip);
+            yield return new WaitForSeconds(clickClip.length);
+        }
+
+        SceneManager.LoadScene("GameSceneLevel" + gameManager.levelProgress);
+    }
+
 }
