@@ -97,5 +97,8 @@ public class LevelScript : MonoBehaviour
         }
     }
 
-
+    public void StartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
 }
