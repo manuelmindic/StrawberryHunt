@@ -158,11 +158,6 @@ MonoBehaviour:
   levelTwoText: {fileID: 1826934261}
   levelThreeText: {fileID: 1059620931}
   disabledSprite: {fileID: 21300000, guid: f427039c07d99714bbe28ed23de1e29a, type: 3}
-  LevelButton: {fileID: 0}
-  speed: 2
-  height: 8
-  levelClickSound: {fileID: 0}
-  originPos: {x: 0, y: 0, z: 0}
 --- !u!4 &34106854
 Transform:
   m_ObjectHideFlags: 0
@@ -215,7 +210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -112, y: -69}
+  m_AnchoredPosition: {x: -105, y: -56}
   m_SizeDelta: {x: 70.7954, y: 68.3918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230588277
@@ -327,9 +322,10 @@ MonoBehaviour:
   originPos: {x: 0, y: 0, z: 0}
   speed: 2
   height: 8
-  LevelButton1: {fileID: 230588277}
-  LevelButton2: {fileID: 0}
-  LevelButton3: {fileID: 0}
+  LevelButtons:
+  - {fileID: 230588277}
+  - {fileID: 1299177339}
+  - {fileID: 1674249753}
   levelClickSound: {fileID: 1244765971}
 --- !u!1 &248123789
 GameObject:
@@ -783,11 +779,6 @@ MonoBehaviour:
   levelTwoText: {fileID: 1826934261}
   levelThreeText: {fileID: 1059620931}
   disabledSprite: {fileID: 21300000, guid: f427039c07d99714bbe28ed23de1e29a, type: 3}
-  LevelButton: {fileID: 0}
-  speed: 2
-  height: 8
-  levelClickSound: {fileID: 0}
-  originPos: {x: 0, y: 0, z: 0}
 --- !u!212 &669573979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1341,7 +1332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 41, y: -8}
+  m_AnchoredPosition: {x: 35, y: 2}
   m_SizeDelta: {x: 70.7954, y: 68.3918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1299177339
@@ -1453,10 +1444,11 @@ MonoBehaviour:
   originPos: {x: 0, y: 0, z: 0}
   speed: 2
   height: 8
-  LevelButton1: {fileID: 1299177339}
-  LevelButton2: {fileID: 0}
-  LevelButton3: {fileID: 0}
-  levelClickSound: {fileID: 0}
+  LevelButtons:
+  - {fileID: 230588277}
+  - {fileID: 1299177339}
+  - {fileID: 1674249753}
+  levelClickSound: {fileID: 1244765971}
 --- !u!1 &1585066938
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,7 +1588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112, y: 105}
+  m_AnchoredPosition: {x: 102, y: 96}
   m_SizeDelta: {x: 70.7954, y: 68.3918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1674249753
@@ -1643,8 +1635,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 669573978}
-        m_TargetAssemblyTypeName: LevelScript, Assembly-CSharp
+      - m_Target: {fileID: 2002171815}
+        m_TargetAssemblyTypeName: UpAndDownLevel, Assembly-CSharp
         m_MethodName: pressNextLevel
         m_Mode: 1
         m_Arguments:
@@ -1708,10 +1700,11 @@ MonoBehaviour:
   originPos: {x: 0, y: 0, z: 0}
   speed: 2
   height: 8
-  LevelButton1: {fileID: 1674249753}
-  LevelButton2: {fileID: 0}
-  LevelButton3: {fileID: 0}
-  levelClickSound: {fileID: 0}
+  LevelButtons:
+  - {fileID: 230588277}
+  - {fileID: 1299177339}
+  - {fileID: 1674249753}
+  levelClickSound: {fileID: 1244765971}
 --- !u!1 &1826934259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,9 +1871,10 @@ MonoBehaviour:
   originPos: {x: 0, y: 0, z: 0}
   speed: 2
   height: 8
-  LevelButton1: {fileID: 1299177339}
-  LevelButton2: {fileID: 0}
-  LevelButton3: {fileID: 0}
+  LevelButtons:
+  - {fileID: 230588277}
+  - {fileID: 1299177339}
+  - {fileID: 1674249753}
   levelClickSound: {fileID: 1244765971}
 --- !u!4 &2002171816
 Transform:

@@ -9,9 +9,7 @@ public class UpAndDownLevel : MonoBehaviour
     public Vector3 originPos;
     public float speed = 2f;
     public float height = 8f;
-    public Button LevelButton1;
-    public Button LevelButton2;
-    public Button LevelButton3;
+    public Button[] LevelButtons;
 
     public AudioSource levelClickSound;
 
@@ -28,22 +26,20 @@ public class UpAndDownLevel : MonoBehaviour
     }
     public void upAndDownLevel()
     {
-        if (LevelButton1.interactable == true )
+        foreach (var level in LevelButtons)
         {
-            Debug.Log("WARRRUUMM");
-            float newY = Mathf.Sin(Time.time * speed) * height;
-            transform.localPosition = originPos + new Vector3(0, newY, 0);
-        } 
-        
+            if (level.interactable)
+            {
+                Debug.Log("WARRRUUMM");
+                float newY = Mathf.Sin(Time.time * speed) * height;
+                transform.localPosition = originPos + new Vector3(0, newY, 0);
+            }
+        }
     }
     public void pressNextLevel()
     {
-        if (LevelButton1.interactable == true || LevelButton2.interactable == true)
-        {
-            Debug.Log("audiooo");
-            levelClickSound.Play();
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        Debug.Log("audiooo");
+        levelClickSound.Play();
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
 }

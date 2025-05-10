@@ -17,11 +17,11 @@ public class LevelScript : MonoBehaviour
     public TMP_Text levelThreeText;
     public Sprite disabledSprite;
 
-
+    private GameManager gameManager = GameManager.Instance;
 
     void Start()
     {
-        string levelCounter = "2";
+        string levelCounter = gameManager.levelProgress.ToString();
         LevelSelector(levelCounter);
 
         
@@ -70,9 +70,6 @@ public class LevelScript : MonoBehaviour
             levelThreeButton.interactable = true;
         }
     }
-
-    
-   
 
     public void StartScene()
     {
