@@ -17,18 +17,25 @@ public class LevelScript : MonoBehaviour
     public TMP_Text levelThreeText;
     public Sprite disabledSprite;
 
-   public  AudioSource levelClickSound;
+
+    public Button LevelButton;
 
     public float speed = 2f;
     public float height = 8f;
-
+    public AudioSource levelClickSound;
     public Vector3 originPos;
+
     void Start()
     {
         string levelCounter = "2";
-        Debug.Log(levelOneText.text + "Hieiiier");
         LevelSelector(levelCounter);
-        
+
+        originPos = transform.localPosition;
+    }
+
+    private void Update()
+    {
+         upAndDownLevel();    
     }
 
     public void LevelSelector(string levelCounter)
@@ -40,12 +47,10 @@ public class LevelScript : MonoBehaviour
 
         if (levelCounter == levelOneText.text)
         {
-            Debug.Log("hallo" + levelCounter);
 
             levelOneButton.interactable = true;
             if (levelOneButton.interactable)
             {
-                Debug.Log("Hieiiierrrrrrr" + levelCounter);
 
             }
             levelTwoButton.interactable = false;
@@ -72,11 +77,25 @@ public class LevelScript : MonoBehaviour
         }
     }
 
-    
-
     public void pressNextLevel()
     {
-        levelClickSound.Play();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (LevelButton.interactable == true)
+        {
+            Debug.Log("audiooo");
+            levelClickSound.Play();
+           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
+    public void upAndDownLevel()
+    {
+        if (LevelButton.interactable == true)
+        {
+            
+
+            float newY = Mathf.Sin(Time.time * speed) * height;
+            transform.localPosition = originPos + new Vector3(0, newY, 0);
+        }
     }
+
+
+}
