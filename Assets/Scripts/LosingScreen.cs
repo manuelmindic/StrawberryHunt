@@ -23,7 +23,7 @@ public class LosingScreen : MonoBehaviour
     {
         Debug.Log("Level Failed!");
         Debug.Log("Level Progress: " + gameManager.levelProgress);
-        gameManager.levelProgress -= 1;
+        if (gameManager.levelProgress != 1) gameManager.levelProgress -= 1;
         SceneManager.LoadScene("LevelScene");
     }
 

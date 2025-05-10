@@ -6199,10 +6199,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveTime: 0.2
-  spriteUp: {fileID: -537005481, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
-  spriteDown: {fileID: 1718328832, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
-  spriteLeft: {fileID: -875320176, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
-  spriteRight: {fileID: 1627902265, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  blueSpriteUp: {fileID: -537005481, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  blueSpriteDown: {fileID: 1718328832, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  blueSpriteLeft: {fileID: -875320176, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  blueSpriteRight: {fileID: 1627902265, guid: 358270948feb8474cb9e4611f49c1df9, type: 3}
+  yellowSpriteUp: {fileID: 377130058, guid: dfb778ff04c971c44a5eb33e404b5b0b, type: 3}
+  yellowSpriteDown: {fileID: -1694686932, guid: dfb778ff04c971c44a5eb33e404b5b0b, type: 3}
+  yellowSpriteLeft: {fileID: -2130419065, guid: dfb778ff04c971c44a5eb33e404b5b0b, type: 3}
+  yellowSpriteRight: {fileID: -232125204, guid: dfb778ff04c971c44a5eb33e404b5b0b, type: 3}
+  pinkSpriteUp: {fileID: -471242605, guid: 33127030d138f4a4b90b296d458aa159, type: 3}
+  pinkSpriteDown: {fileID: -1087020227, guid: 33127030d138f4a4b90b296d458aa159, type: 3}
+  pinkSpriteLeft: {fileID: 1794019086, guid: 33127030d138f4a4b90b296d458aa159, type: 3}
+  pinkSpriteRight: {fileID: -1880567141, guid: 33127030d138f4a4b90b296d458aa159, type: 3}
 --- !u!61 &674771198
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -5,14 +5,30 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveTime = 0.2f;
-    public Sprite spriteUp;
-    public Sprite spriteDown;
-    public Sprite spriteLeft;
-    public Sprite spriteRight;
+    public Sprite blueSpriteUp;
+    public Sprite blueSpriteDown;
+    public Sprite blueSpriteLeft;
+    public Sprite blueSpriteRight;
+
+    public Sprite yellowSpriteUp;
+    public Sprite yellowSpriteDown;
+    public Sprite yellowSpriteLeft;
+    public Sprite yellowSpriteRight;
+
+    public Sprite pinkSpriteUp;
+    public Sprite pinkSpriteDown;
+    public Sprite pinkSpriteLeft;
+    public Sprite pinkSpriteRight;
+
+    private Sprite spriteUp;
+    private Sprite spriteDown;
+    private Sprite spriteLeft;
+    private Sprite spriteRight;
 
     private bool isMoving = false;
     private Vector2 input;
     private Vector3 targetPosition;
+    private GameManager gameManager = GameManager.Instance;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private Vector2 lastDirection = Vector2.down;
@@ -22,10 +38,35 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
         rb = GetComponent<Rigidbody2D>();
         targetPosition = transform.position;
         rb.gravityScale = 0;
         rb.freezeRotation = true;
+        if ( gameManager.selectedCharacterIndex == "blue" )
+        {
+            spriteRenderer.sprite = blueSpriteDown;
+            spriteUp = blueSpriteUp;
+            spriteLeft = blueSpriteLeft;
+            spriteDown = blueSpriteDown;
+            spriteRight = blueSpriteRight;
+        }
+        if (gameManager.selectedCharacterIndex == "pink")
+        {
+            spriteRenderer.sprite = pinkSpriteDown;
+            spriteUp = pinkSpriteUp;
+            spriteLeft = pinkSpriteLeft;
+            spriteDown = pinkSpriteDown;
+            spriteRight = pinkSpriteRight;
+        }
+        if (gameManager.selectedCharacterIndex == "yellow")
+        {
+            spriteRenderer.sprite = yellowSpriteDown;
+            spriteUp = yellowSpriteUp;
+            spriteLeft = yellowSpriteLeft;
+            spriteDown = yellowSpriteDown;
+            spriteRight = yellowSpriteRight;
+        }
     }
 
     void Update()
