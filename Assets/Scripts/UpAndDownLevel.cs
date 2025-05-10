@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UpAndDownLevel : MonoBehaviour
@@ -10,6 +11,8 @@ public class UpAndDownLevel : MonoBehaviour
     public float speed = 2f;
     public float height = 8f;
     public Button[] LevelButtons;
+
+    private GameManager gameManager = GameManager.Instance;
 
     public AudioSource levelClickSound;
 
@@ -40,6 +43,7 @@ public class UpAndDownLevel : MonoBehaviour
     {
         Debug.Log("audiooo");
         levelClickSound.Play();
+        SceneManager.LoadScene("GameSceneLevel"+gameManager.levelProgress);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
