@@ -6626,7 +6626,7 @@ Transform:
   m_GameObject: {fileID: 674771194}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5, y: -6.5, z: 0}
+  m_LocalPosition: {x: -5.492, y: -6.5, z: 0}
   m_LocalScale: {x: 0.695636, y: 0.67675835, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6692,7 +6692,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2220352, y: 1.3905278}
+  m_Size: {x: 0.5, y: 0.9}
   m_EdgeRadius: 0
 --- !u!50 &674771199
 Rigidbody2D:
@@ -6706,7 +6706,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.79997987
+  m_Mass: 0.21184984
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
