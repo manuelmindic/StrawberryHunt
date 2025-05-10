@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameLogic : MonoBehaviour
 {
     public int strawberriesNeededToWin;
+    private GameManager gameManager = GameManager.Instance;
     private int strawberriesCollected = 0;
 
     void Start()
@@ -27,8 +28,16 @@ public class GameLogic : MonoBehaviour
         }
     }
 
-    void LevelComplete()
+    public void LevelComplete()
     {
-        Debug.Log("Level Complete!");
+        if (gameManager.levelProgress == 3)
+        {
+            SceneManager.LoadScene("FinalWinningScreen");
+        }
+        else
+        {
+            Debug.Log("Level Complete!");
+            SceneManager.LoadScene("WinningScreen");
+        }
     }
 }

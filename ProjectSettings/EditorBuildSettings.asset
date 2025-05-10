@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameSceneLevel3.unity
     guid: 8dfc5ff1b6510514aa64f9b8572cd2be
+  - enabled: 1
+    path: Assets/Scenes/WinningScreen.unity
+    guid: 3a9d58c4982f83b4497b7e122f23e0c7
+  - enabled: 1
+    path: Assets/Scenes/FinalWinningScreen.unity
+    guid: 1e425386a2ced934db92727fc5a77d12
   m_configObjects: {}
