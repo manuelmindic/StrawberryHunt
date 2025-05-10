@@ -42,11 +42,11 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 destination = transform.position + new Vector3(input.x, input.y, 0);
                 StartCoroutine(MoveTo(destination));
             }
+        }
 
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                TryRemoveBush();
-            }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TryRemoveBush();
         }
     }
 
