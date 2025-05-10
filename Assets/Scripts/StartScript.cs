@@ -8,10 +8,6 @@ public class StartScript : MonoBehaviour
 {
     public AudioSource levelClickSound;
     public AudioClip clickClip;
-    public Image image1;
-    public Image image2;
-    public Sprite sprite1;
-    public Sprite sprite2;
 
     public Image[] characterImages;
     public Sprite[] char1Sprites;
