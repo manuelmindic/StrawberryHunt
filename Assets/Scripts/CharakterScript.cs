@@ -83,6 +83,6 @@ public class CharakterScript : MonoBehaviour
 
     public void BackScene()
     {
-        StartCoroutine(PlaySoundAndLoad("BackScene", backButtonSource, backButtonClip));
+        StartCoroutine(PlaySoundAndLoad("StartScene", backButtonSource, backButtonClip));
     }
 }
