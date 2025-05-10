@@ -17,7 +17,7 @@ public class LevelScript : MonoBehaviour
     public TMP_Text levelThreeText;
     public Sprite disabledSprite;
 
-    AudioSource levelClickSound;
+   public  AudioSource levelClickSound;
 
     public float speed = 2f;
     public float height = 8f;
