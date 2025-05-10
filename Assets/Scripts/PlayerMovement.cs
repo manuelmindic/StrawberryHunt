@@ -67,12 +67,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 newPos = Vector3.Lerp(startingPos, destination, elapsedTime / moveTime);
             rb.MovePosition(newPos); 
-            elapsedTime += Time.deltaTime;
-            yield return null;
+            elapsedTime += Time.fixedDeltaTime;
+            yield return new WaitForFixedUpdate();
         }
         rb.MovePosition(destination);
-
-        transform.position = destination;
         isMoving = false;
     }
 }
